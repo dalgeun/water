@@ -189,7 +189,7 @@ arr2[arr2<0] = np.nan
 arr2[arr2>1] = np.nan
 
 np.amax(arr2)
-arr3= np.ma.masked_invalid(arr2)
+# arr3= np.ma.masked_invalid(arr2)
 
 arr2 = np.where(arr2 <0, np.nan, arr2)
 arr2 = np.where(arr2 >1, np.nan, arr2)
